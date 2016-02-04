@@ -16,6 +16,10 @@ public abstract class FactoriaDto {
 	public abstract Persona Persona();
 	public abstract Prestamo Prestamo();
 	
+	// marc lo hace similar pero lo que devuvle es un objeto Dao
+	// public static Dao getFactoriaDao (String tipoAcceso , Objetos tipoObjeto){
+	// y abajo hace un new AutoresDto que es el repositorio del dto (RepositorioAutoresMemoriaDto) que hay que hacer
+	
 	public static <Dto> Dto getFactoriaDao (String tipoAcceso , Objetos tipoObjeto){
 		
 		Dto r = null ;
