@@ -6,7 +6,7 @@ import com.wpsnetwork.dao.entidades.Libro;
 import com.wpsnetwork.dao.entidades.Persona;
 import com.wpsnetwork.dao.entidades.Prestamo;
 import com.wpsnetwork.dao.enumerados.Objetos;
-import com.wpsnetwork.interfaces.Dao;
+import com.wpsnetwork.dao.interfaces.Dao;
 
 public class FactoriaDao {
 	

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.wpsnetwork.dao.entidades.Libro;
-import com.wpsnetwork.interfaces.DaoLibros;
+import com.wpsnetwork.dao.interfaces.DaoLibros;
 
 public class RepositorioLibrosMemoriaDao implements DaoLibros {
 
@@ -17,7 +17,7 @@ public class RepositorioLibrosMemoriaDao implements DaoLibros {
 	private RepositorioLibrosMemoriaDao (){
 	}
 	
-	public RepositorioLibrosMemoriaDao getInstance (){
+	public static RepositorioLibrosMemoriaDao getInstance (){
 		if(repositorio == null)
 			repositorio = new RepositorioLibrosMemoriaDao();
 		return repositorio ;

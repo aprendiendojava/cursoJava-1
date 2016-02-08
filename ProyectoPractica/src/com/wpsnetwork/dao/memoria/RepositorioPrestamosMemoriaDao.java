@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.wpsnetwork.dao.entidades.Prestamo;
-import com.wpsnetwork.interfaces.DaoPrestamos;
+import com.wpsnetwork.dao.interfaces.DaoPrestamos;
 
 public class RepositorioPrestamosMemoriaDao implements DaoPrestamos {
 
@@ -17,7 +17,7 @@ public class RepositorioPrestamosMemoriaDao implements DaoPrestamos {
 	private RepositorioPrestamosMemoriaDao (){
 	}
 	
-	public RepositorioPrestamosMemoriaDao getInstance (){
+	public static RepositorioPrestamosMemoriaDao getInstance (){
 		if(repositorio == null)
 			repositorio = new RepositorioPrestamosMemoriaDao();
 		return repositorio ;
