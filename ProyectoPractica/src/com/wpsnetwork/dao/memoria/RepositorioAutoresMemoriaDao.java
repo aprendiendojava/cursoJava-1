@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.wpsnetwork.dao.entidades.Autor;
-import com.wpsnetwork.interfaces.DaoAutores;
+import com.wpsnetwork.dao.interfaces.DaoAutores;
 
 public class RepositorioAutoresMemoriaDao implements DaoAutores {
 	
@@ -17,7 +17,7 @@ public class RepositorioAutoresMemoriaDao implements DaoAutores {
 	private RepositorioAutoresMemoriaDao (){
 	}
 	
-	public RepositorioAutoresMemoriaDao getInstance (){
+	public static RepositorioAutoresMemoriaDao getInstance (){
 		if(repositorio == null)
 			repositorio = new RepositorioAutoresMemoriaDao();
 		return repositorio ;
